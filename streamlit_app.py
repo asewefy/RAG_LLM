@@ -1,11 +1,12 @@
-!pip install faiss-cpu --no-cache
-!pip install -q -U google-generativeai
-!pip install python-dotenv
-!pip install streamlit
+# pip install faiss-cpu --no-cache
+# pip install -q -U google-generativeai
+# pip install python-dotenv
+# pip install streamlit
 
 import streamlit as st
+import RagLlm as rag
 
-ocr_system = OCR_RAG_System(knowledge_base_path='knowledge_base.pkl')
+ocr_system = rag.OCR_RAG_System(knowledge_base_path='knowledge_base.pkl')
 #image_path = upload_file()
 #response = ocr_system.process_image_with_rag(image_path, True)
 
@@ -25,4 +26,4 @@ with col2:
 
 if(response is not None):
   if(st.button("Read the text for me!")):
-    ReadText(response)
+    rag.ReadText(response)
