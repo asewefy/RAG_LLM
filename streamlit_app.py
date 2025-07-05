@@ -12,9 +12,13 @@ ocr_system = rag.OCR_RAG_System(knowledge_base_path='knowledge_base.pkl')
 
 st.title("Arabic Handwritten Text OCR Service")
 st.header("Upload an image file")
-image_path = st.file_uploader("Select an image file (.jpg)")
-response = ocr_system.process_image_with_rag(image_path, True)
-ocr_system.save_knowledge_base()
+uploaded_file = str(st.file_uploader("Select an image file (.jpg)"))
+if uploaded_file is not None:
+    with tempfile.NamedTemporaryFile(delete=False) as temp_file:
+        temp_file.write(uploaded_file.read())
+        image_path = temp_file.name
+        response = ocr_system.process_image_with_rag(image_path, True)
+        ocr_system.save_knowledge_base()
 
 col1, col2 = st.columns(2)
 with col1:
