@@ -14,6 +14,7 @@ st.title("Arabic Handwritten Text OCR Service")
 st.header("Upload an image file")
 uploaded_file = st.file_uploader("Select an image file (.jpg)", type=["jpg"])
 image_path = None
+response = None
 if uploaded_file is not None:
     with tempfile.NamedTemporaryFile(delete=False) as temp_file:
         temp_file.write(uploaded_file.read())
