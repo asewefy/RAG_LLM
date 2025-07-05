@@ -6,6 +6,7 @@
 import streamlit as st
 import RagLlm as rag
 import tempfile
+import os
 
 ocr_system = rag.OCR_RAG_System(knowledge_base_path='knowledge_base.pkl')
 #image_path = upload_file()
