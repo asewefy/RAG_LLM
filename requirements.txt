@@ -1,5 +1,5 @@
 streamlit
-faiss-cpu
+faiss-cpu==1.7.1
 google-generativeai
 python-dotenv
 pillow
