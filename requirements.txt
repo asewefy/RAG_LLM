@@ -1,5 +1,5 @@
 streamlit
-faiss
+faiss-cpu --no-cache
 google-generativeai
 python-dotenv
 pillow
