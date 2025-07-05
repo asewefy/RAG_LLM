@@ -80,18 +80,18 @@ class OCR_RAG_System:
 
         #print(f"image_path(2) = {image_path}")
         # Handle both local files and URLs
-        if image_path.startswith(('http://', 'https://')):
-            response = requests.get(image_path)
-            img = Image.open(BytesIO(response.content))
-        else:
-            # For Colab, handle uploaded files
-            if not os.path.exists(image_path):
-                raise FileNotFoundError(f"Image file not found: {image_path}")
-            #img = Image.open(image_path)
-            img = self.scale_down_to_min_size(image_path, 800, 800)#, "scaled_output.jpg")
-            # plt.imshow(img)
-            # plt.axis('off')
-            # plt.show()
+        #if image_path.startswith(('http://', 'https://')):
+        #    response = requests.get(image_path)
+        #    img = Image.open(BytesIO(response.content))
+        #else:
+        # For Colab, handle uploaded files
+        if not os.path.exists(image_path):
+            raise FileNotFoundError(f"Image file not found: {image_path}")
+        #img = Image.open(image_path)
+        img = self.scale_down_to_min_size(image_path, 800, 800)#, "scaled_output.jpg")
+        # plt.imshow(img)
+        # plt.axis('off')
+        # plt.show()
 
         return img
 
