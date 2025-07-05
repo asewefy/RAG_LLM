@@ -2,7 +2,6 @@ streamlit
 faiss-cpu
 google-generativeai
 python-dotenv
-os
 PIL
 sentence_transformers
 numpy
