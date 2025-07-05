@@ -1,6 +1,5 @@
 streamlit
 faiss-cpu
-faiss-gpu
 google-generativeai
 python-dotenv
 pillow
