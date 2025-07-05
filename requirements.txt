@@ -1,0 +1,14 @@
+streamlit
+faiss-cpu
+google-generativeai
+python-dotenv
+os
+PIL
+sentence_transformers
+numpy
+faiss
+typing
+requests
+io
+IPython.display
+gTTS
