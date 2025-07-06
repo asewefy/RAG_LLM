@@ -1,7 +1,6 @@
 libopenblas-dev python3-dev
 libomp-dev
 dotenv
-python3-dev
 git
 swig
 g++
