@@ -1,7 +1,8 @@
 libopenblas-dev python3-dev
 libomp-dev
 dotenv
-git+https://github.com/google/generative-ai-python
+python3-dev
+git
 swig
 g++
 build-essential
