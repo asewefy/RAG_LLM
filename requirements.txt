@@ -1,6 +1,6 @@
-streamlit==1.29.0  # Latest stable version (Python 3.9+)
-faiss-cpu==1.7.4   # Use faiss-cpu instead of faiss
-numpy>=1.26.4      # Required by FAISS
+streamlit==1.29.0
+faiss-cpu==1.7.4
+numpy==1.24.0
 google-generativeai==0.8.5
 python-dotenv==1.0.0
 pillow==11.3.0
