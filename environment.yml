@@ -1,8 +1,1 @@
-name: my_streamlit_app
-channels:
-  - conda-forge
-dependencies:
-  - python=3.9.16
-  - streamlit=1.29.0
-  - faiss-cpu=1.7.4
-  - numpy>=1.24.0
+
