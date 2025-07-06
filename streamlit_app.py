@@ -1,8 +1,4 @@
-# pip install faiss-cpu --no-cache
-# pip install -q -U google-generativeai
-# pip install python-dotenv
-# pip install streamlit
-
+from dotenv import load_dotenv
 import streamlit as st
 import RagLlm as rag
 import tempfile
