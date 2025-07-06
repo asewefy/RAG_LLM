@@ -1,7 +1,7 @@
+from dotenv import load_dotenv
 import os
 #import pytesseract
 from PIL import Image
-from dotenv import load_dotenv
 import google.generativeai as genai
 from sentence_transformers import SentenceTransformer
 import numpy as np
