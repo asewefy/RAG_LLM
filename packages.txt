@@ -1,6 +1,6 @@
 libopenblas-dev python3-dev
 libomp-dev
-python-dotenv==1.0.0
+python-dotenv
 python3-dev
 git
 swig
