@@ -1,2 +1,5 @@
 libopenblas-dev python3-dev
 libomp-dev
+swig
+g++
+build-essential
