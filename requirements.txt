@@ -1,5 +1,5 @@
 streamlit==1.26.0
-faiss-cpu==1.6.3
+faiss-cpu==1.7.2
 google-generativeai==0.8.5
 python-dotenv==1.0.0
 pillow==11.3.0
