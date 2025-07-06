@@ -1,4 +1,5 @@
 from dotenv import load_dotenv
+load_dotenv()
 import os
 #import pytesseract
 from PIL import Image
@@ -46,7 +47,7 @@ class OCR_RAG_System:
 
         # Initialize Gemini
         if gemini_api_key is None:
-            load_dotenv()
+            #load_dotenv()
             gemini_api_key = os.getenv('GOOGLE_API_KEY')
             if gemini_api_key is None:
                 raise ValueError("Gemini API key not provided and GOOGLE_API_KEY environment variable not set")
